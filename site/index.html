@@ -324,8 +324,52 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-}    
-	</style>
+} 
+.frame1
+{
+	float: center;
+	margin-left: 32%;
+	border-radius: 10px;
+	border: solid 1px black;
+	box-shadow: 2px 5px 20px rgba(119,119,119,10.5)
+} 
+@media screen and (max-width: 800px) {
+  .frame1 {   
+
+  margin-left: 0;
+  width:100%;
+
+    
+  }
+}  
+@media screen and (max-width: 800px) {
+  .frameh {   
+
+font-size: 20px;
+
+    
+  }
+}  
+.frameh
+{
+	text-align: center;
+	letter-spacing: 1px;
+	color: white;
+	font-family: sans-serif;
+	background-color: green inherit;
+	border-radius: 10px;
+}
+#Tokyo2
+{
+	background-image: url('http://hansenfoundationnj.org/wp-content/uploads/2017/03/Black-grunge-textures-wallpaper-67593.jpg');
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+
+
+</style>
+
 </head>
 <body>
 	<div class="top"><img class="imgtop" src="https://labour.telangana.gov.in/images/telanganalogo.png" width="7%"><br>
@@ -1647,15 +1691,21 @@ img {vertical-align: middle;}
   <h3>Tokyo1</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
+
 <div id="Tokyo2" class="tabcontent">
-  
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
+	<h1 class="frameh">1.Bio-Mimicry</h1>
+	<iframe class="frame1" width="450" height="250"
+src="https://www.youtube.com/embed/vyGUdVKF-YM" frameborder="0" allowfullscreen> 
+
+</iframe>
+	<h1 class="frameh">2.Earth Facts</h1>
+	<iframe class="frame1" width="450" height="250"
+src="https://www.youtube.com/embed/tC_lvLwRoQE" frameborder="0" allowfullscreen> 
+</iframe> 
+</div> 
+
 <div id="Tokyo3" class="tabcontent">
-  
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<object class="article" width="100%" height="500px" data="biomimcry.pdf"></object>
 </div>
 <div id="Tokyo4" class="tabcontent">
   
@@ -1793,7 +1843,15 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+<script>
+	$(function(){
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
 
+  $(window).resize(function(){
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
+});
+</script>
 	
 
 
